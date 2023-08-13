@@ -13,11 +13,16 @@
 </head>
 
 <body>
+    <di class="body">
     <div class="statusContenedor">
         <div class="clockMailWhatsapp">
             <div id="statusHora" class="statusHorario textHora" onload="reloj()">
             </div>
             <figure>
+                <img src="./assets/img/Whatsapp.png" alt="Whatsapp" class="whatsapp" id="whatsappPic">
+            </figure>
+            <figure>
+                <img src="./assets/img/gmail.png" alt="Mail" class="mail" id="mailPic">
             </figure>
         </div>
         <div class="batteryContenedor">
@@ -51,7 +56,7 @@
         <div class="contenedor_viajes">
             <div class="contenedor_expressPrecio">
                 <p class="text expressPrice">Express</p>
-                <p id="expressPriceBox1" class="text expressPrice">$2,400</p>
+                <p id="expressPriceBox1" class="text expressPrice">$9,999</p>
             </div>
             <div class="contenedorViaje">
                 <div class="contenedor_fechaHora">
@@ -62,16 +67,16 @@
                     </div>
                     <div class="contenedor_fechaFinalizado">
                         <div class="fechaFinalizado">
-                            <p id="dia" class="text textFecha">15</p>
+                            <p id="dia" class="text textFecha">01</p>
                             <p class="textBar">/</p>
-                            <p id="mes" class="text textFecha">07</p>
+                            <p id="mes" class="text textFecha">01</p>
                             <p class="textBar">/</p>
-                            <p id="año" class="text textFecha">23</p>
+                            <p id="año" class="text textFecha">01</p>
                             <p class="text coma">,</p>
-                            <p id="hora" class="hora text">12</p>
+                            <p id="hora" class="hora text">00</p>
                             <p class="text doblePunto">:</p>
-                            <p id="minutos" class="minutos text">56</p>
-                            <p id="amPm" class="text ampm">pm</p>
+                            <p id="minutos" class="minutos text">00</p>
+                            <p id="amPm" class="text ampm">am</p>
                         </div>
                         <div class="contenedor_finalizadoText">
                             <p class="textFinalizado">Finalizado</p>
@@ -99,7 +104,7 @@
         <div class="contenedor_viajes">
             <div class="contenedor_expressPrecio">
                 <p class="text expressPrice">Express</p>
-                <p id="price" class="text expressPrice">$2,400</p>
+                <p id="price" class="text expressPrice">$9,999</p>
             </div>
             <div class="contenedorViaje">
                 <div class="contenedor_fechaHora">
@@ -110,16 +115,16 @@
                     </div>
                     <div class="contenedor_fechaFinalizado">
                         <div class="fechaFinalizado">
-                            <p id="dia" class="text textFecha">15</p>
+                            <p id="dia" class="text textFecha">01</p>
                             <p class="textBar">/</p>
-                            <p id="mes" class="text textFecha">07</p>
+                            <p id="mes" class="text textFecha">01</p>
                             <p class="textBar">/</p>
-                            <p id="año" class="text textFecha">23</p>
+                            <p id="año" class="text textFecha">01</p>
                             <p class="text coma">,</p>
-                            <p id="hora" class="hora text">12</p>
+                            <p id="hora" class="hora text">00</p>
                             <p class="text doblePunto">:</p>
-                            <p id="minutos" class="minutos text">56</p>
-                            <p id="amPm" class="text ampm">pm</p>
+                            <p id="minutos" class="minutos text">00</p>
+                            <p id="amPm" class="text ampm">am</p>
                         </div>
                         <div class="contenedor_finalizadoText">
                             <p class="textFinalizado">Finalizado</p>
@@ -132,23 +137,23 @@
                             <img class="dot" src="./assets/img/greendot.png" alt="Green Dot">
                         </figure>
                         <div>
-                            <p id="origen" class="dotText">NombreCalle</p>
+                            <p id="origen" class="dotText">NombreOrigen</p>
                         </div>
                     </div>
                     <div class="dotContenedor">
                         <figure>
                             <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
                         </figure>
-                        <p id="destino" class="dotText">NombreCalle</p>
+                        <p id="destino" class="dotText">NombreDestino</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="contenedorDatos">
             <div class="contenedorInputs">
-                <h2 class="tituloDatos">Origen:</h2>
+                <h2 class="tituloDatos">Caja 1:</h2>
                 <div class="tiempo">
-                    <h3 class="parametrosInicio">Inicio:</h3>
+                    <h3 class="parametrosInicio">Origen:</h3>
                     <div>
                         <input type="text" id="diaBoxI" class="boxType" placeholder="Día">
                         <input type="text" id="mesBoxI" class="boxType" placeholder="Mes">
@@ -156,7 +161,7 @@
                     </div>
                 </div>
                 <div class="tiempo separador">
-                    <h3 class="parametrosInicio">Fin:</h3>
+                    <h3 class="parametrosInicio">Destino:</h3>
                     <div>
                         <input type="day" class="diaBox boxType" placeholder="Día">
                         <input type="text" class="mesBox boxType" placeholder="Mes">
@@ -178,12 +183,16 @@
                         id="porcentajeBateria">
                     <button class="boxTypeO" onclick="nivelBateria()">Ingresar</button>
                 </div>
+                <div class="direccionOrigen">
+                    <h3 class="parametrosInicio">¿WhatsApp?</h3>
+                    <input type="checkbox" class="boxTypeO" onchange="whatsapp()" id="whatsapp">
+                </div>
             </div>
 
             <div class="contenedorInputs">
-                <h2 class="tituloDatos">Destino:</h2>
+                <h2 class="tituloDatos">Caja 2</h2>
                 <div class="tiempo">
-                    <h3 class="parametrosInicio">Inicio:</h3>
+                    <h3 class="parametrosInicio">Origen:</h3>
                     <div>
                         <input type="text" class="diaBox boxType" placeholder="Día">
                         <input type="text" class="mesBox boxType" placeholder="Mes">
@@ -191,16 +200,16 @@
                     </div>
                 </div>
                 <div class="tiempo separador">
-                    <h3 class="parametrosInicio">Fin:</h3>
+                    <h3 class="parametrosInicio">Destino:</h3>
                     <div>
-                        <input type="day" class="diaBox boxType" placeholder="Día">
+                        <input type="text" class="diaBox boxType" placeholder="Día">
                         <input type="text" class="mesBox boxType" placeholder="Mes">
                         <input type="text" class="añoBox boxType" placeholder="Año">
                     </div>
                 </div>
                 <div class="precioOrigen">
                     <h3 class="parametrosInicio">Valor:</h3>
-                    <input type="number" name="precioOrigen" id="precioOrigen" class="boxTypeP"
+                    <input type="text" name="precioOrigen" id="precioOrigen" class="boxTypeP"
                         placeholder="Precio regreso">
                 </div>
                 <div class="direccionOrigen">
@@ -214,11 +223,9 @@
                     <button class="boxTypeO" onclick="nivelCelular()">Ingresar</button>
                 </div>
             </div>
-
-
         </div>
-
     </main>
+</div>
     <script src="./assets/js/main.js"></script>
 </body>
 

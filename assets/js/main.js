@@ -34,7 +34,7 @@ function nivelBateria() {
   let porcentajeBateria = document.getElementById("porcentajeBateria").value;
   let batteryLevel = document.getElementById("batteryLevel");
   const batteryPic = document.getElementById('batteryPic');
-  if (porcentajeBateria <=4){
+  if (porcentajeBateria <=9){
     batteryLevel.textContent = porcentajeBateria;
     batteryPic.src = "./assets/img/0.png";
   }else if(porcentajeBateria <=19){
@@ -72,3 +72,13 @@ function nivelCelular(){
         signalPic.src = "./assets/img/100s.png";
       }
     }
+
+function whatsapp(){
+    let whatsapp = document.getElementById('whatsapp').checked;
+    const whatsappPic = document.getElementById('whatsappPic');
+    if(whatsapp === true){
+        whatsappPic.style.display = "inherit"
+    }else{
+        whatsappPic.style.display = "none"
+    }
+}
