@@ -1,0 +1,255 @@
+*{
+margin: 0;
+padding: 0
+}
+
+body{
+    font-family: 'Choco Cooky';
+    src: url('../fonts/Chococooky.ttf') format('Normal');
+    background-color: #F3F4F6;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.statusContenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    background-color: #FFFFFF;
+}
+
+.signal{
+    height: 70px;
+    margin-right: 25px;
+}
+
+.batteryPic{
+    height: 70px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.statusHorario{
+    display: flex;
+    flex-direction: row;
+    padding-left: 70px;
+}
+
+.batteryContenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.batteryLevel{
+    font-size: 50px;
+    color: #121212;
+}
+
+.textHora{
+    font-size: 50px;
+    margin-right: 3px;
+    color:#757575;
+}
+
+.contenedor_crossFactura{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+header{
+    display: flex;
+    width: 1080px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 3px rgb(181, 181, 181);
+}
+
+.cross{
+    width: 50px;
+}
+
+.facturas{
+    color: #ED8652;
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+.contenedor_general{
+    display: flex;
+    width: 94%;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.contenedor_header{
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 35px;
+}
+
+h1{
+    font-size: 64px;
+}
+
+.finalizado_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 90px;
+    /* background-color: red; */
+}
+
+.finalizado_item{
+    font-size: 36px;
+    color: #8d8d8d;
+    margin-left: 20px;
+}
+
+.contenedor_viajes{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 35px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    box-shadow: 3px 3px 3px 3px rgb(181, 181, 181);
+}
+
+.contenedor_expressPrecio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-size: 40px;
+    color: #4d4d4d;
+}
+
+.expressPrice{
+    color:#353535;
+}
+
+.coma{
+    margin-right: 10px;
+    color:#757575;
+}
+
+.hora, .minutos, .dotText{
+    color:#757575;
+}
+
+.doblePunto{
+    margin-right: 2px;
+    margin-left: 2px;
+    color:#757575;
+}
+
+.ampm{
+    margin-left: 10px;
+    color:#757575;
+    
+}
+
+.textFecha{
+    margin-right: 3px;
+    color:#757575;
+}
+
+.textBar,  .origen, .destino{
+    font-size: 40px;
+    color: #757575;
+}
+
+.contenedorViaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contenedor_fechaHora{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.clockContenedor, .dotContenedor{
+    margin-right:20px;
+}
+
+.clock{
+    width: 25px;
+}
+
+.contenedor_fechaFinalizado{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contenedor_finalizadoText{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.textFinalizado{
+    font-size: 40px;
+    margin-right: 30px;
+    color:#898989;
+}
+
+.fechaFinalizado{
+    display: flex;
+    flex-direction: row;
+}
+
+.dotContenedor{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.dotDiv{
+    width: 30px;
+    background-color: pink;
+
+}
+
+.dot{
+    width: 20px;
+    margin-right: 25px;
+}
+
+.dotText{
+    font-size: 40px;
+
+}
+

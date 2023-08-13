@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didi</title>
+    <link rel="shorcut icon" type="image/ico" href="./assets/img/ico.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/campos.css">
+
+
+</head>
+
+<body>
+    <div class="statusContenedor">
+        <div class="clockMailWhatsapp">
+            <div id="statusHora" class="statusHorario textHora" onload="reloj()">
+            </div>
+            <figure>
+            </figure>
+        </div>
+        <div class="batteryContenedor">
+            <figure>
+                <img src="./assets/img/100s.png" alt="Signal" class="signal" id="signalPic">
+            </figure>
+            <p class="batteryLevel"><span id="batteryLevel">85</span></p>
+            <p class="batteryLevel">%</p>
+            <figure>
+                <img src="./assets/img/80.png" alt="Battery" class="batteryPic" id="batteryPic">
+            </figure>
+        </div>
+    </div>
+
+    <header>
+        <div class="contenedor_crossFactura">
+            <figure>
+                <img class="cross" src="./assets/img/cross.png" alt="cross">
+            </figure>
+            <p class="facturas">Facturas</p>
+        </div>
+        <div class="contenedor_header">
+            <h1>Mis viajes</h1>
+        </div>
+    </header>
+
+    <main class="contenedor_general">
+        <div class="finalizado_header">
+            <p class="finalizado_item">Finalizados</p>
+        </div>
+        <div class="contenedor_viajes">
+            <div class="contenedor_expressPrecio">
+                <p class="text expressPrice">Express</p>
+                <p id="expressPriceBox1" class="text expressPrice">$2,400</p>
+            </div>
+            <div class="contenedorViaje">
+                <div class="contenedor_fechaHora">
+                    <div class="clockContenedor">
+                        <figure>
+                            <img class="clock" src="./assets/img/clock.png" alt="Clock">
+                        </figure>
+                    </div>
+                    <div class="contenedor_fechaFinalizado">
+                        <div class="fechaFinalizado">
+                            <p id="dia" class="text textFecha">15</p>
+                            <p class="textBar">/</p>
+                            <p id="mes" class="text textFecha">07</p>
+                            <p class="textBar">/</p>
+                            <p id="año" class="text textFecha">23</p>
+                            <p class="text coma">,</p>
+                            <p id="hora" class="hora text">12</p>
+                            <p class="text doblePunto">:</p>
+                            <p id="minutos" class="minutos text">56</p>
+                            <p id="amPm" class="text ampm">pm</p>
+                        </div>
+                        <div class="contenedor_finalizadoText">
+                            <p class="textFinalizado">Finalizado</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="dotContenedor">
+                        <figure>
+                            <img class="dot" src="./assets/img/greendot.png" alt="Green Dot">
+                        </figure>
+                        <div>
+                            <p class="dotText"><span id="calleOrigenBox1">NombreOrigen</span></p>
+                        </div>
+                    </div>
+                    <div class="dotContenedor">
+                        <figure>
+                            <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
+                        </figure>
+                        <p id="destino" class="dotText">NombreCalle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_viajes">
+            <div class="contenedor_expressPrecio">
+                <p class="text expressPrice">Express</p>
+                <p id="price" class="text expressPrice">$2,400</p>
+            </div>
+            <div class="contenedorViaje">
+                <div class="contenedor_fechaHora">
+                    <div class="clockContenedor">
+                        <figure>
+                            <img class="clock" src="./assets/img/clock.png" alt="Clock">
+                        </figure>
+                    </div>
+                    <div class="contenedor_fechaFinalizado">
+                        <div class="fechaFinalizado">
+                            <p id="dia" class="text textFecha">15</p>
+                            <p class="textBar">/</p>
+                            <p id="mes" class="text textFecha">07</p>
+                            <p class="textBar">/</p>
+                            <p id="año" class="text textFecha">23</p>
+                            <p class="text coma">,</p>
+                            <p id="hora" class="hora text">12</p>
+                            <p class="text doblePunto">:</p>
+                            <p id="minutos" class="minutos text">56</p>
+                            <p id="amPm" class="text ampm">pm</p>
+                        </div>
+                        <div class="contenedor_finalizadoText">
+                            <p class="textFinalizado">Finalizado</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="dotContenedor">
+                        <figure>
+                            <img class="dot" src="./assets/img/greendot.png" alt="Green Dot">
+                        </figure>
+                        <div>
+                            <p id="origen" class="dotText">NombreCalle</p>
+                        </div>
+                    </div>
+                    <div class="dotContenedor">
+                        <figure>
+                            <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
+                        </figure>
+                        <p id="destino" class="dotText">NombreCalle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorDatos">
+            <div class="contenedorInputs">
+                <h2 class="tituloDatos">Origen:</h2>
+                <div class="tiempo">
+                    <h3 class="parametrosInicio">Inicio:</h3>
+                    <div>
+                        <input type="text" id="diaBoxI" class="boxType" placeholder="Día">
+                        <input type="text" id="mesBoxI" class="boxType" placeholder="Mes">
+                        <input type="text" id="añoBoxI" class="boxType" placeholder="Año">
+                    </div>
+                </div>
+                <div class="tiempo separador">
+                    <h3 class="parametrosInicio">Fin:</h3>
+                    <div>
+                        <input type="day" class="diaBox boxType" placeholder="Día">
+                        <input type="text" class="mesBox boxType" placeholder="Mes">
+                        <input type="text" class="añoBox boxType" placeholder="Año">
+                    </div>
+                </div>
+                <div class="precioOrigen">
+                    <h3 class="parametrosInicio">Valor:</h3>
+                    <input type="number" name="precioOrigen" id="precioOrigen" class="boxTypeP"
+                        placeholder="Precio ida">
+                </div>
+                <div class="direccionOrigen">
+                    <h3 class="parametrosInicio">Dirección Origen:</h3>
+                    <input class="DirOrigen boxTypeO" placeholder="Inicio viaje"></input>
+                </div>
+                <div class="direccionOrigen">
+                    <h3 class="parametrosInicio">Nivel de batería:</h3>
+                    <input type="number" min="0" max="100" placeholder="Nivel de batería" class="boxTypeO"
+                        id="porcentajeBateria">
+                    <button class="boxTypeO" onclick="nivelBateria()">Ingresar</button>
+                </div>
+            </div>
+
+            <div class="contenedorInputs">
+                <h2 class="tituloDatos">Destino:</h2>
+                <div class="tiempo">
+                    <h3 class="parametrosInicio">Inicio:</h3>
+                    <div>
+                        <input type="text" class="diaBox boxType" placeholder="Día">
+                        <input type="text" class="mesBox boxType" placeholder="Mes">
+                        <input type="text" class="añoBox boxType" placeholder="Año">
+                    </div>
+                </div>
+                <div class="tiempo separador">
+                    <h3 class="parametrosInicio">Fin:</h3>
+                    <div>
+                        <input type="day" class="diaBox boxType" placeholder="Día">
+                        <input type="text" class="mesBox boxType" placeholder="Mes">
+                        <input type="text" class="añoBox boxType" placeholder="Año">
+                    </div>
+                </div>
+                <div class="precioOrigen">
+                    <h3 class="parametrosInicio">Valor:</h3>
+                    <input type="number" name="precioOrigen" id="precioOrigen" class="boxTypeP"
+                        placeholder="Precio regreso">
+                </div>
+                <div class="direccionOrigen">
+                    <h3 class="parametrosInicio">Dirección destino:</h3>
+                    <input class="DirOrigen boxTypeD" placeholder="Término viaje"></input>
+                </div>
+                <div class="direccionOrigen">
+                    <h3 class="parametrosInicio">Nivel de señal:</h3>
+                    <input type="number" min="0" max="100" placeholder="Nivel de señal" class="boxTypeO"
+                        id="porcentajeCelular">
+                    <button class="boxTypeO" onclick="nivelCelular()">Ingresar</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
