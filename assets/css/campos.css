@@ -61,3 +61,24 @@
     flex-direction: column;
     margin-left: 20px;
   }
+
+  .parametrosIcon{    
+    display: flex;
+    flex-direction: row;
+  }
+
+  .parametrosInicioIcon{
+    display:block;
+      margin-top: 30px;
+      font-size: 50px;
+    }
+
+    .boxTypeC{
+      width: 90px;
+      height: 50px;
+      margin-top: 20px;
+      font-size: 35px;
+      color: #4d4d4d;
+      box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+    }
+  
