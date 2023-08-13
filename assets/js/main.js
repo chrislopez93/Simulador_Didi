@@ -82,3 +82,33 @@ function whatsapp(){
         whatsappPic.style.display = "none"
     }
 }
+
+function gmail(){
+    let gmail = document.getElementById('gmail').checked;
+    const mailPic = document.getElementById('gmailPic');
+    if(gmail === true){
+        mailPic.style.display = "inherit"
+    }else{
+        mailPic.style.display = "none"
+    }
+}
+
+function alarma(){
+    let alarma = document.getElementById('alarma').checked;
+    const alarmaPic = document.getElementById('alarmaPic');
+    if(alarma === true){
+        alarmaPic.style.display = "inherit"
+    }else{
+        alarmaPic.style.display = "none"
+    }
+}
+
+function didi(){
+    let didi = document.getElementById('didi').checked;
+    const didiPic = document.getElementById('didiPic');
+    if(didi === true){
+        didiPic.style.display = "inherit"
+    }else{
+        didiPic.style.display = "none"
+    }
+}

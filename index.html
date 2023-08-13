@@ -22,10 +22,16 @@
                 <img src="./assets/img/Whatsapp.png" alt="Whatsapp" class="whatsapp" id="whatsappPic">
             </figure>
             <figure>
-                <img src="./assets/img/gmail.png" alt="Mail" class="mail" id="mailPic">
+                <img src="./assets/img/gmail.png" alt="Mail" class="mail" id="gmailPic">
+            </figure>
+            <figure>
+                <img src="./assets/img/didi.png" alt="Didi" class="didi" id="didiPic">
             </figure>
         </div>
         <div class="batteryContenedor">
+            <figure>
+                <img src="./assets/img/alarma.png" alt="Alarma" class="alarma" id="alarmaPic">
+            </figure>
             <figure>
                 <img src="./assets/img/100s.png" alt="Signal" class="signal" id="signalPic">
             </figure>
@@ -187,6 +193,10 @@
                     <h3 class="parametrosInicio">¿WhatsApp?</h3>
                     <input type="checkbox" class="boxTypeO" onchange="whatsapp()" id="whatsapp">
                 </div>
+                <div class="direccionOrigen">
+                    <h3 class="parametrosInicio">¿Alarma?</h3>
+                    <input type="checkbox" class="boxTypeO" onchange="alarma()" id="alarma">
+                </div>
             </div>
 
             <div class="contenedorInputs">
@@ -221,6 +231,14 @@
                     <input type="number" min="0" max="100" placeholder="Nivel de señal" class="boxTypeO"
                         id="porcentajeCelular">
                     <button class="boxTypeO" onclick="nivelCelular()">Ingresar</button>
+                    <div class="direccionOrigen">
+                        <h3 class="parametrosInicio">¿Gmail?</h3>
+                        <input type="checkbox" class="boxTypeO" onchange="gmail()" id="gmail">
+                    </div>
+                    <div class="direccionOrigen">
+                        <h3 class="parametrosInicio">¿Didi?</h3>
+                        <input type="checkbox" class="boxTypeO" onchange="didi()" id="didi">
+                    </div>
                 </div>
             </div>
         </div>
