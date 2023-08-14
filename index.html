@@ -14,131 +14,131 @@
 
 <body>
     <div class="body">
-    <div class="statusContenedor">
-        <div class="clockMailWhatsapp">
-            <div id="statusHora" class="statusHorario textHora" onload="reloj()">
+        <div class="statusContenedor">
+            <div class="clockMailWhatsapp">
+                <div id="statusHora" class="statusHorario textHora" onload="reloj()">
+                </div>
+                <figure>
+                    <img src="./assets/img/Whatsapp.png" alt="Whatsapp" class="whatsapp" id="whatsappPic">
+                </figure>
+                <figure>
+                    <img src="./assets/img/gmail.png" alt="Mail" class="mail" id="gmailPic">
+                </figure>
+                <figure>
+                    <img src="./assets/img/didi.png" alt="Didi" class="didi" id="didiPic">
+                </figure>
+                <figure>
+                    <img src="./assets/img/face.png" alt="Facebook" class="facebook" id="facebookPic">
+                </figure>
+                <figure>
+                    <img src="./assets/img/tweeter.png" alt="Tweeter" class="tweeter" id="tweeterPic">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/img/Whatsapp.png" alt="Whatsapp" class="whatsapp" id="whatsappPic">
-            </figure>
-            <figure>
-                <img src="./assets/img/gmail.png" alt="Mail" class="mail" id="gmailPic">
-            </figure>
-            <figure>
-                <img src="./assets/img/didi.png" alt="Didi" class="didi" id="didiPic">
-            </figure>
-            <figure>
-                <img src="./assets/img/face.png" alt="Facebook" class="facebook" id="facebookPic">
-            </figure>
-            <figure>
-                <img src="./assets/img/tweeter.png" alt="Tweeter" class="tweeter" id="tweeterPic">
-            </figure>
-        </div>
-        <div class="batteryContenedor">
-            <figure>
-                <img src="./assets/img/alarma.png" alt="Alarma" class="alarma" id="alarmaPic">
-            </figure>
-            <figure>
-                <img src="./assets/img/100s.png" alt="Signal" class="signal" id="signalPic">
-            </figure>
-            <p class="batteryLevel"><span id="batteryLevel">85</span></p>
-            <p class="batteryLevel">%</p>
-            <figure>
-                <img src="./assets/img/80.png" alt="Battery" class="batteryPic" id="batteryPic">
-            </figure>
-        </div>
-    </div>
-
-    <header>
-        <div class="contenedor_crossFactura">
-            <figure>
-                <img class="cross" src="./assets/img/cross.png" alt="cross">
-            </figure>
-            <p class="facturas">Facturas</p>
-        </div>
-        <div class="contenedor_header">
-            <h1>Mis viajes</h1>
-        </div>
-    </header>
-
-    <main class="contenedor_general">
-        <div class="finalizado_header">
-            <p class="finalizado_item">Finalizados</p>
-        </div>
-        <div class="contenedor_viajes">
-            <div class="contenedor_expressPrecio">
-                <p class="text">Express</p>
-                <p class="text"><span id="expressPriceBox1">325</span></p>
+            <div class="batteryContenedor">
+                <figure>
+                    <img src="./assets/img/alarma.png" alt="Alarma" class="alarma" id="alarmaPic">
+                </figure>
+                <figure>
+                    <img src="./assets/img/100s.png" alt="Signal" class="signal" id="signalPic">
+                </figure>
+                <p class="batteryLevel"><span id="batteryLevel">85</span></p>
+                <p class="batteryLevel">%</p>
+                <figure>
+                    <img src="./assets/img/80.png" alt="Battery" class="batteryPic" id="batteryPic">
+                </figure>
             </div>
-            <div class="contenedorViaje">
-                <div class="contenedor_fechaHora">
-                    <div class="clockContenedor">
-                        <figure>
-                            <img class="clock" src="./assets/img/clock.png" alt="Clock">
-                        </figure>
-                    </div>
-                    <!-- CAJA 1-->
-                    <div class="contenedor_fechaFinalizado">
-                        <div class="fechaFinalizado">
-                            <p class="text textFecha"><span id="diaViajeBox1">??</span></p>
-                            <p class="textBar">/</p>
-                            <p class="text textFecha"><span id="mesViajeBox1">??</span></p>
-                            <p class="textBar">/</p>
-                            <p class="text textFecha"><span id="añoViajeBox1">??</span></p>
-                            <p class="text coma">,</p>
-                            <p class="hora text"><span id="horaViajeBox1">??</span></p>
-                            <p class="text doblePunto">:</p>
-                            <p class="minutos text"><span id="minutoViajeBox1">??</span></p>
-                            <p class="text ampm"><span id="amPmViajeBox1">??</span></p>
+        </div>
+
+        <header>
+            <div class="contenedor_crossFactura">
+                <figure>
+                    <img class="cross" src="./assets/img/cross.png" alt="cross">
+                </figure>
+                <p class="facturas">Facturas</p>
+            </div>
+            <div class="contenedor_header">
+                <h1>Mis viajes</h1>
+            </div>
+        </header>
+
+        <main class="contenedor_general">
+            <div class="finalizado_header">
+                <p class="finalizado_item">Finalizados</p>
+            </div>
+            <div class="contenedor_viajes">
+                <div class="contenedor_expressPrecio">
+                    <p class="text">Express</p>
+                    <p class="text"><span id="expressPriceBox1">?,???</span></p>
+                </div>
+                <div class="contenedorViaje">
+                    <div class="contenedor_fechaHora">
+                        <div class="clockContenedor">
+                            <figure>
+                                <img class="clock" src="./assets/img/clock.png" alt="Clock">
+                            </figure>
                         </div>
-                        <div class="contenedor_finalizadoText">
-                            <p class="textFinalizado">Finalizado</p>
+                        <!-- CAJA 1-->
+                        <div class="contenedor_fechaFinalizado">
+                            <div class="fechaFinalizado">
+                                <p class="text textFecha"><span id="diaViajeBox1">??</span></p>
+                                <p class="textBar">/</p>
+                                <p class="text textFecha"><span id="mesViajeBox1">??</span></p>
+                                <p class="textBar">/</p>
+                                <p class="text textFecha"><span id="añoViajeBox1">??</span></p>
+                                <p class="text coma">,</p>
+                                <p class="hora text"><span id="horaViajeBox1">??</span></p>
+                                <p class="text doblePunto">:</p>
+                                <p class="minutos text"><span id="minutoViajeBox1">??</span></p>
+                                <p class="text ampm"><span id="amPmViajeBox1">??</span></p>
+                            </div>
+                            <div class="contenedor_finalizadoText">
+                                <p class="textFinalizado">Finalizado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dotContenedor">
+                            <figure>
+                                <img class="dot" src="./assets/img/greendot.png" alt="Green Dot">
+                            </figure>
+                            <div>
+                                <p class="dotText"><span id="calleOrigenBox1">NombreOrigen</span></p>
+                            </div>
+                        </div>
+                        <div class="dotContenedor">
+                            <figure>
+                                <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
+                            </figure>
+                            <p class="dotText"><span id="calleDestinoBox1">NombreCalle</span></p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="dotContenedor">
-                        <figure>
-                            <img class="dot" src="./assets/img/greendot.png" alt="Green Dot">
-                        </figure>
-                        <div>
-                            <p class="dotText"><span id="calleOrigenBox1">NombreOrigen</span></p>
-                        </div>
-                    </div>
-                    <div class="dotContenedor">
-                        <figure>
-                            <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
-                        </figure>
-                        <p class="dotText"><span id="calleDestinoBox1">NombreCalle</span></p>
-                    </div>
+            </div>
+            <div class="contenedor_viajes">
+                <div class="contenedor_expressPrecio">
+                    <p class="text expressPrice">Express</p>
+                    <p class="text expressPrice"><span id="expressPriceBox2">$?,???</span></p>
                 </div>
-            </div>
-        </div>
-        <div class="contenedor_viajes">
-            <div class="contenedor_expressPrecio">
-                <p class="text expressPrice">Express</p>
-                <p class="text expressPrice"><span id="expressPriceBox2">$?,???</span></p>
-            </div>
-            <div class="contenedorViaje">
-                <div class="contenedor_fechaHora">
-                    <div class="clockContenedor">
-                        <figure>
-                            <img class="clock" src="./assets/img/clock.png" alt="Clock">
-                        </figure>
-                    </div>
-                    <div class="contenedor_fechaFinalizado">
-                        <div class="fechaFinalizado">
-                            <p class="text textFecha"><span id="diaViajeBox2">??</span></p>
-                            <p class="textBar">/</p>
-                            <p class="text textFecha"><span id="mesViajeBox2">??</span></p>
-                            <p class="textBar">/</p>
-                            <p class="text textFecha"><span id="añoViajeBox2">??</span></p>
-                            <p class="text coma">,</p>
-                            <p class="hora text"><span id="horaViajeBox2">??</span></p>
-                            <p class="text doblePunto">:</p>
-                            <p class="minutos text"><span id="minutoViajeBox2">??</span></p>
-                            <p class="text ampm"><span id="amPmViajeBox2">??</span></p>
+                <div class="contenedorViaje">
+                    <div class="contenedor_fechaHora">
+                        <div class="clockContenedor">
+                            <figure>
+                                <img class="clock" src="./assets/img/clock.png" alt="Clock">
+                            </figure>
                         </div>
+                        <div class="contenedor_fechaFinalizado">
+                            <div class="fechaFinalizado">
+                                <p class="text textFecha"><span id="diaViajeBox2">??</span></p>
+                                <p class="textBar">/</p>
+                                <p class="text textFecha"><span id="mesViajeBox2">??</span></p>
+                                <p class="textBar">/</p>
+                                <p class="text textFecha"><span id="añoViajeBox2">??</span></p>
+                                <p class="text coma">,</p>
+                                <p class="hora text"><span id="horaViajeBox2">??</span></p>
+                                <p class="text doblePunto">:</p>
+                                <p class="minutos text"><span id="minutoViajeBox2">??</span></p>
+                                <p class="text ampm"><span id="amPmViajeBox2">??</span></p>
+                            </div>
                         </div>
                         <div class="contenedor_finalizadoText">
                             <p class="textFinalizado">Finalizado</p>
@@ -162,10 +162,10 @@
                     </div>
                 </div>
             </div>
-        </div>
     </main>
-</div>
-    <div class="contenedorDatos">
+    </div> <!-- -->
+
+    <div class="contenedorDatos"> <!--CAJAS DE DATOS PARA COMPLETAR-->
         <div class="contenedorInputs"> <!--CAJA 1-->
             <h2 class="tituloDatos">Caja 1</h2>
             <div class="tiempo">
@@ -186,8 +186,8 @@
             </div>
             <div class="direccionOrigen">
                 <label for="priceBox2" class="parametrosInicio">Valor:</label>
-                <input type="text" name="precioOrigen" id="priceBox2" class="boxTypeP"
-                    placeholder="Precio ida" autocomplete="on">
+                <input type="text" name="precioOrigen" id="priceBox2" class="boxTypeP" placeholder="Precio ida"
+                    autocomplete="on">
             </div>
             <div class="direccionOrigen">
                 <label for="dirOrigenBox2" class="parametrosInicio">Dirección Origen:</label>
@@ -241,7 +241,8 @@
             </div>
             <div class="direccionOrigen">
                 <label for="priceBox1" class="parametrosInicio">Valor:</label>
-                <input type="text" name="precioOrigen" id="priceBox1" class="boxTypeP" placeholder="Precio ida" autocomplete="on">
+                <input type="text" name="precioOrigen" id="priceBox1" class="boxTypeP" placeholder="Precio ida"
+                    autocomplete="on">
             </div>
             <div class="direccionOrigen">
                 <label for="dirOrigenBox1" class="parametrosInicio">Dirección Origen:</label>
