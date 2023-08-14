@@ -21,9 +21,15 @@
 
 .contenedorDatos{
   display: flex;
-  flex-direction: row;
   padding-bottom: 40px;
+}
+
+.contenedorDatosImpresora{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #d0dcc6;
+  padding-bottom: 50px;
 }
 
 .contenedorInputs{
@@ -40,7 +46,7 @@
     margin-left: 20px;
 }
 
-.boxTypeD, .boxTypeO, .boxTypeP{
+.boxTypeD, .boxTypeO, .boxTypeP, .boxTypeI{
     width: 390px;
     height: 50px;
     margin-top: 20px;

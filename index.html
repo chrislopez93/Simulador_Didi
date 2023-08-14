@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="body">
+    <div class="body" id="impresioWeb">
         <div class="statusContenedor">
             <div class="clockMailWhatsapp">
                 <div id="statusHora" class="statusHorario textHora" onload="reloj()">
@@ -163,9 +163,12 @@
                 </div>
             </div>
     </main>
+    <div id="contenedorCanvas">
+    </div>
     </div> <!-- -->
 
-    <div class="contenedorDatos"> <!--CAJAS DE DATOS PARA COMPLETAR-->
+    <div class="contenedorDatosImpresora"> <!--CAJAS DE DATOS PARA COMPLETAR-->
+        <div class="contenedorDatos">
         <div class="contenedorInputs"> <!--CAJA 1-->
             <h2 class="tituloDatos">Caja 1</h2>
             <div class="tiempo">
@@ -220,8 +223,8 @@
                 </div>
             </div>
         </div>
-        <div class="contenedorInputs"><!--CAJA 2-->
 
+        <div class="contenedorInputs"><!--CAJA 2-->
             <h2 class="tituloDatos">Caja 2:</h2>
             <div class="tiempo">
                 <h3 class="parametrosInicio">Origen:</h3>
@@ -274,6 +277,10 @@
                 <label for="facebook" class="parametrosInicioIcon">¿Facebook?</label>
                 <input type="checkbox" class="boxTypeC" onchange="facebook()" id="facebook" checked>
             </div>
+        </div>
+        </div>
+        <div>
+            <button class="boxTypeI" id="printDidi">Imprimir</button>
         </div>
     </div>
     <script src="./assets/js/main.js"></script>
