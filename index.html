@@ -61,8 +61,8 @@
         </div>
         <div class="contenedor_viajes">
             <div class="contenedor_expressPrecio">
-                <p class="text expressPrice">Express</p>
-                <p id="expressPriceBox1" class="text expressPrice">$9,999</p>
+                <p class="text">Express</p>
+                <p class="text"><span id="expressPriceBox1">325</span></p>
             </div>
             <div class="contenedorViaje">
                 <div class="contenedor_fechaHora">
@@ -71,7 +71,7 @@
                             <img class="clock" src="./assets/img/clock.png" alt="Clock">
                         </figure>
                     </div>
-
+                    <!-- CAJA 1-->
                     <div class="contenedor_fechaFinalizado">
                         <div class="fechaFinalizado">
                             <p class="text textFecha"><span id="diaViajeBox1">??</span></p>
@@ -103,7 +103,7 @@
                         <figure>
                             <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
                         </figure>
-                        <p id="destino" class="dotText">NombreCalle</p>
+                        <p class="dotText"><span id="calleDestinoBox1">NombreCalle</span></p>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
         <div class="contenedor_viajes">
             <div class="contenedor_expressPrecio">
                 <p class="text expressPrice">Express</p>
-                <p class="text expressPrice"><span id="priceBox1">$9,999</span></p>
+                <p class="text expressPrice"><span id="expressPriceBox2">$?,???</span></p>
             </div>
             <div class="contenedorViaje">
                 <div class="contenedor_fechaHora">
@@ -122,16 +122,17 @@
                     </div>
                     <div class="contenedor_fechaFinalizado">
                         <div class="fechaFinalizado">
-                            <p class="text textFecha"></p>
+                            <p class="text textFecha"><span id="diaViajeBox2">??</span></p>
                             <p class="textBar">/</p>
-                            <p class="text textFecha">01</p>
+                            <p class="text textFecha"><span id="mesViajeBox2">??</span></p>
                             <p class="textBar">/</p>
-                            <p class="text textFecha">01</p>
+                            <p class="text textFecha"><span id="añoViajeBox2">??</span></p>
                             <p class="text coma">,</p>
-                            <p class="hora text">00</p>
+                            <p class="hora text"><span id="horaViajeBox2">??</span></p>
                             <p class="text doblePunto">:</p>
-                            <p class="minutos text">00</p>
-                            <p class="text ampm">am</p>
+                            <p class="minutos text"><span id="minutoViajeBox2">??</span></p>
+                            <p class="text ampm"><span id="amPmViajeBox2">??</span></p>
+                        </div>
                         </div>
                         <div class="contenedor_finalizadoText">
                             <p class="textFinalizado">Finalizado</p>
@@ -144,14 +145,14 @@
                             <img class="dot" src="./assets/img/greendot.png" alt="Green Dot">
                         </figure>
                         <div>
-                            <p id="origen" class="dotText">NombreOrigen</p>
+                            <p class="dotText"><span id="calleOrigenBox2">NombreOrigen</span></p>
                         </div>
                     </div>
                     <div class="dotContenedor">
                         <figure>
                             <img class="dot" src="./assets/img/orangedot.png" alt="Orange Dot">
                         </figure>
-                        <p id="destino" class="dotText">NombreDestino</p>
+                        <p class="dotText"><span id="calleDestinoBox2">NombreCalle</span></p>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,8 @@
     </main>
 </div>
     <div class="contenedorDatos">
-        <div class="contenedorInputs">
+        <div class="contenedorInputs"><!--CAJA 1-->
+
             <h2 class="tituloDatos">Caja 1:</h2>
             <div class="tiempo">
                 <h3 class="parametrosInicio">Origen:</h3>
@@ -178,8 +180,8 @@
                 </div>
             </div>
             <div class="direccionOrigen">
-                <label for="precioOrigen" class="parametrosInicio">Valor:</label>
-                <input type="number" name="precioOrigen" id="precioOrigen" class="boxTypeP"
+                <label for="priceBox1" class="parametrosInicio">Valor:</label>
+                <input type="text" name="precioOrigen" id="priceBox1" class="boxTypeP"
                     placeholder="Precio ida">
             </div>
             <div class="direccionOrigen">
@@ -209,34 +211,41 @@
                 <input type="checkbox" class="boxTypeC" onchange="alarma()" id="alarma" checked>
             </div>
         </div>
-
-        <div class="contenedorInputs">
+        <div class="contenedorInputs"> <!--CAJA 2-->
             <h2 class="tituloDatos">Caja 2</h2>
             <div class="tiempo">
                 <h3 class="parametrosInicio">Origen:</h3>
                 <div>
-                    <input type="text" class="diaBox boxType" placeholder="Día">
-                    <input type="text" class="mesBox boxType" placeholder="Mes">
-                    <input type="text" class="añoBox boxType" placeholder="Año">
+                    <input type="text" id="diaOrigenBox2" class="boxType" placeholder="Día">
+                    <input type="text" id="mesOrigenBox2" class="boxType" placeholder="Mes">
+                    <input type="text" id="añoOrigenBox2" class="boxType" placeholder="Año">
                 </div>
             </div>
             <div class="tiempo separador">
-                <h3 class="parametrosInicio">Destino:</h3>
+                <h3 class="parametrosInicio">Hora:</h3>
                 <div>
-                    <input type="text" class="diaBox boxType" placeholder="Día">
-                    <input type="text" class="mesBox boxType" placeholder="Mes">
-                    <input type="text" class="añoBox boxType" placeholder="Año">
+                    <input type="text" id="horaBox2" class="boxType" placeholder="Hora">
+                    <input type="text" id="minBox2" class="boxType" placeholder="Min">
+                    <input type="text" id="amPmBox2" class="boxType" placeholder="am/pm">
                 </div>
             </div>
-            <div class="precioOrigen">
-                <h3 class="parametrosInicio">Valor:</h3>
-                <input type="text" name="precioOrigen" id="precioOrigen" class="boxTypeP"
-                    placeholder="Precio regreso">
+            <div class="direccionOrigen">
+                <label for="priceBox2" class="parametrosInicio">Valor:</label>
+                <input type="text" name="precioOrigen" id="priceBox2" class="boxTypeP"
+                    placeholder="Precio ida">
             </div>
             <div class="direccionOrigen">
-                <h3 class="parametrosInicio">Dirección destino:</h3>
-                <input class="DirOrigen boxTypeD" placeholder="Término viaje"></input>
+                <label for="dirOrigenBox2" class="parametrosInicio">Dirección Origen:</label>
+                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirOrigenBox2"></input>
             </div>
+            <div class="direccionOrigen">
+                <label for="dirDestinoBox2" class="parametrosInicio">Dirección Destino:</label>
+                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirDestinoBox2"></input>
+            </div>
+            <dir class="direccionOrigen">
+                <button class="boxTypeO" onclick="aceptaBox2()" id="aceptaBox2">Ingresar</button>
+            </dir>
+
             <div class="direccionOrigen">
                 <label for="porcentajeCelular" class="parametrosInicio">Nivel de señal:</label>
                 <input type="number" min="0" max="100" placeholder="Nivel de señal" class="boxTypeO"

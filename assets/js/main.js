@@ -1,26 +1,46 @@
-function aceptaBox1(){
-let varaceptaBox1 = document.getElementById('aceptaBox1');
-let diaViajeBox1 = document.getElementById('diaViajeBox1');
-let mesViajeBox1 = document.getElementById('mesViajeBox1');
-let añoViajeBox1 = document.getElementById('añoViajeBox1');
-let horaViajeBox1 = document.getElementById('horaViajeBox1');
-let minutoViajeBox1 = document.getElementById('minutoViajeBox1');
-let amPmViajeBox1 = document.getElementById('amPmViajeBox1');
+const diaViajeBox1 = document.getElementById('diaViajeBox1');
+const mesViajeBox1 = document.getElementById('mesViajeBox1');
+const añoViajeBox1 = document.getElementById('añoViajeBox1');
+const horaViajeBox1 = document.getElementById('horaViajeBox1');
+const minutoViajeBox1 = document.getElementById('minutoViajeBox1');
+const amPmViajeBox1 = document.getElementById('amPmViajeBox1');
+const expressPriceBox1 = document.getElementById('expressPriceBox1');
+const calleOrigenBox1 = document.getElementById('calleOrigenBox1');
+const calleDestinoBox1 = document.getElementById('calleDestinoBox1');
 
+const diaViajeBox2 = document.getElementById('diaViajeBox2');
+const mesViajeBox2 = document.getElementById('mesViajeBox2');
+const añoViajeBox2 = document.getElementById('añoViajeBox2');
+const horaViajeBox2 = document.getElementById('horaViajeBox2');
+const minutoViajeBox2 = document.getElementById('minutoViajeBox2');
+const amPmViajeBox2 = document.getElementById('amPmViajeBox2');
+const expressPriceBox2 = document.getElementById('expressPriceBox2');
+const calleOrigenBox2 = document.getElementById('calleOrigenBox2');
+const calleDestinoBox2 = document.getElementById('calleDestinoBox2');
+
+function aceptaBox1(){
 let diaOrigenBox1 = document.getElementById('diaOrigenBox1').value;
 let mesOrigenBox1 = document.getElementById('mesOrigenBox1').value;
 let añoOrigenBox1 = document.getElementById('añoOrigenBox1').value;
 let horaBox1 = document.getElementById('horaBox1').value;
 let minBox1 = document.getElementById('minBox1').value;
 let amPmBox1 = document.getElementById('amPmBox1').value;
-if(diaOrigenBox1 !== "" && mesOrigenBox1 !== "" && añoOrigenBox1 !== "" && horaBox1 !== "" && minBox1 !== "" && amPmBox1 !== ""){
-  alert('OK');
+let priceBox1 = document.getElementById('priceBox1').value;
+let dirOrigenBox1 = document.getElementById('dirOrigenBox1').value;
+let dirDestinoBox1 = document.getElementById('dirDestinoBox1').value;
+
+if(diaOrigenBox1 !== "" && mesOrigenBox1 !== "" && añoOrigenBox1 !== "" && horaBox1 !== "" 
+    && minBox1 !== "" && amPmBox1 !== "" && priceBox1 !== "" && dirOrigenBox1 !== "" && dirDestinoBox1 !== ""){
+  expressPriceBox1.textContent = priceBox1;
   diaViajeBox1.textContent = diaOrigenBox1;
   mesViajeBox1.textContent = mesOrigenBox1;
   añoViajeBox1.textContent = añoOrigenBox1;
   horaViajeBox1.textContent = horaBox1;
   minutoViajeBox1.textContent = minBox1;
   amPmViajeBox1.textContent = amPmBox1;
+  calleOrigenBox1.textContent = dirOrigenBox1;
+  calleDestinoBox1.textContent = dirDestinoBox1;
+  alert('Parámentros de Caja 1: OK');
 }else{
   alert('¡Faltan campos!');
 }
@@ -30,6 +50,36 @@ if(diaOrigenBox1 !== "" && mesOrigenBox1 !== "" && añoOrigenBox1 !== "" && hora
 
 }
 
+function aceptaBox2(){
+  let diaOrigenBox2 = document.getElementById('diaOrigenBox2').value;
+  let mesOrigenBox2 = document.getElementById('mesOrigenBox2').value;
+  let añoOrigenBox2 = document.getElementById('añoOrigenBox2').value;
+  let horaBox2 = document.getElementById('horaBox2').value;
+  let minBox2 = document.getElementById('minBox2').value;
+  let amPmBox2 = document.getElementById('amPmBox2').value;
+  let priceBox2 = document.getElementById('priceBox2').value;
+  let dirOrigenBox2 = document.getElementById('dirOrigenBox2').value;
+  let dirDestinoBox2 = document.getElementById('dirDestinoBox2').value;
+  if(diaOrigenBox2 !== "" && mesOrigenBox2 !== "" && añoOrigenBox2 !== "" && horaBox2 !== "" 
+      && minBox2 !== "" && amPmBox2 !== "" && priceBox2 !== "" && dirOrigenBox2 !== "" && dirDestinoBox2 !== ""){
+    expressPriceBox2.textContent = priceBox2;
+    diaViajeBox2.textContent = diaOrigenBox2;
+    mesViajeBox2.textContent = mesOrigenBox2;
+    añoViajeBox2.textContent = añoOrigenBox2;
+    horaViajeBox2.textContent = horaBox2;
+    minutoViajeBox2.textContent = minBox2;
+    amPmViajeBox2.textContent = amPmBox2;
+    calleOrigenBox2.textContent = dirOrigenBox2;
+    calleDestinoBox2.textContent = dirDestinoBox2;
+    alert('Parámentros de Caja 2: OK');
+  }else{
+    alert('¡Faltan campos!');
+  }
+  
+  
+  
+  
+  }
 
 function cargarReloj() {
   // Haciendo uso del objeto Date() obtenemos la hora, minuto y segundo
