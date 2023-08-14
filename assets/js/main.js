@@ -40,7 +40,7 @@ if(diaOrigenBox1 !== "" && mesOrigenBox1 !== "" && añoOrigenBox1 !== "" && hora
   amPmViajeBox1.textContent = amPmBox1;
   calleOrigenBox1.textContent = dirOrigenBox1;
   calleDestinoBox1.textContent = dirDestinoBox1;
-  alert('Parámentros de Caja 1: OK');
+  alert('Parámentros de Caja 2: OK');
 }else{
   alert('¡Faltan campos!');
 }
@@ -71,7 +71,7 @@ function aceptaBox2(){
     amPmViajeBox2.textContent = amPmBox2;
     calleOrigenBox2.textContent = dirOrigenBox2;
     calleDestinoBox2.textContent = dirDestinoBox2;
-    alert('Parámentros de Caja 2: OK');
+    alert('Parámentros de Caja 1: OK');
   }else{
     alert('¡Faltan campos!');
   }
@@ -194,5 +194,25 @@ function didi(){
     }else{
         didiPic.style.display = "none"
     }
+}
+
+function tweeter(){
+  let tweeter = document.getElementById('tweeter').checked;
+  const didiPic = document.getElementById('tweeterPic');
+  if(tweeter === true){
+    tweeterPic.style.display = "inherit"
+  }else{
+    tweeterPic.style.display = "none"
+  }
+}
+
+function facebook(){
+  let facebook = document.getElementById('facebook').checked;
+  const facebookPic = document.getElementById('facebookPic');
+  if(facebook === true){
+    facebookPic.style.display = "inherit"
+  }else{
+    facebookPic.style.display = "none"
+  }
 }
 

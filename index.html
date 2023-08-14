@@ -27,6 +27,12 @@
             <figure>
                 <img src="./assets/img/didi.png" alt="Didi" class="didi" id="didiPic">
             </figure>
+            <figure>
+                <img src="./assets/img/face.png" alt="Facebook" class="facebook" id="facebookPic">
+            </figure>
+            <figure>
+                <img src="./assets/img/tweeter.png" alt="Tweeter" class="tweeter" id="tweeterPic">
+            </figure>
         </div>
         <div class="batteryContenedor">
             <figure>
@@ -160,59 +166,8 @@
     </main>
 </div>
     <div class="contenedorDatos">
-        <div class="contenedorInputs"><!--CAJA 1-->
-
-            <h2 class="tituloDatos">Caja 1:</h2>
-            <div class="tiempo">
-                <h3 class="parametrosInicio">Origen:</h3>
-                <div>
-                    <input type="text" id="diaOrigenBox1" class="boxType" placeholder="Día">
-                    <input type="text" id="mesOrigenBox1" class="boxType" placeholder="Mes">
-                    <input type="text" id="añoOrigenBox1" class="boxType" placeholder="Año">
-                </div>
-            </div>
-            <div class="tiempo separador">
-                <h3 class="parametrosInicio">Hora:</h3>
-                <div>
-                    <input type="text" id="horaBox1" class="boxType" placeholder="Hora">
-                    <input type="text" id="minBox1" class="boxType" placeholder="Min">
-                    <input type="text" id="amPmBox1" class="boxType" placeholder="am/pm">
-                </div>
-            </div>
-            <div class="direccionOrigen">
-                <label for="priceBox1" class="parametrosInicio">Valor:</label>
-                <input type="text" name="precioOrigen" id="priceBox1" class="boxTypeP"
-                    placeholder="Precio ida">
-            </div>
-            <div class="direccionOrigen">
-                <label for="dirOrigenBox1" class="parametrosInicio">Dirección Origen:</label>
-                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirOrigenBox1"></input>
-            </div>
-            <div class="direccionOrigen">
-                <label for="dirDestinoBox1" class="parametrosInicio">Dirección Destino:</label>
-                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirDestinoBox1"></input>
-            </div>
-            <dir class="direccionOrigen">
-                <button class="boxTypeO" onclick="aceptaBox1()" id="aceptaBox1">Ingresar</button>
-            </dir>
-
-            <div class="direccionOrigen">
-                <label for="porcentajeBateria" class="parametrosInicio">Nivel de batería:</label>
-                <input type="number" min="0" max="100" placeholder="Nivel de batería" class="boxTypeO"
-                    id="porcentajeBateria">
-                <button class="boxTypeO" onclick="nivelBateria()">Ingresar</button>
-            </div>
-            <div class="parametrosIcon">
-                <label for="whatsapp" class="parametrosInicioIcon">¿WhatsApp?</label>
-                <input type="checkbox" class="boxTypeC" onchange="whatsapp()" id="whatsapp" checked>
-            </div>
-            <div class="parametrosIcon">
-                <label for="alarma" class="parametrosInicioIcon">¿Alarma?</label>
-                <input type="checkbox" class="boxTypeC" onchange="alarma()" id="alarma" checked>
-            </div>
-        </div>
-        <div class="contenedorInputs"> <!--CAJA 2-->
-            <h2 class="tituloDatos">Caja 2</h2>
+        <div class="contenedorInputs"> <!--CAJA 1-->
+            <h2 class="tituloDatos">Caja 1</h2>
             <div class="tiempo">
                 <h3 class="parametrosInicio">Origen:</h3>
                 <div>
@@ -240,7 +195,7 @@
             </div>
             <div class="direccionOrigen">
                 <label for="dirDestinoBox2" class="parametrosInicio">Dirección Destino:</label>
-                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirDestinoBox2"></input>
+                <input class="DirOrigen boxTypeO" placeholder="Fin viaje" id="dirDestinoBox2"></input>
             </div>
             <dir class="direccionOrigen">
                 <button class="boxTypeO" onclick="aceptaBox2()" id="aceptaBox2">Ingresar</button>
@@ -259,6 +214,65 @@
                     <label for="didi" class="parametrosInicioIcon">¿Didi?</label>
                     <input type="checkbox" class="boxTypeC" onchange="didi()" id="didi" checked>
                 </div>
+                <div class="parametrosIcon">
+                    <label for="tweeter" class="parametrosInicioIcon">¿Tweeter?</label>
+                    <input type="checkbox" class="boxTypeC" onchange="tweeter()" id="tweeter" checked>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorInputs"><!--CAJA 2-->
+
+            <h2 class="tituloDatos">Caja 2:</h2>
+            <div class="tiempo">
+                <h3 class="parametrosInicio">Origen:</h3>
+                <div>
+                    <input type="text" id="diaOrigenBox1" class="boxType" placeholder="Día">
+                    <input type="text" id="mesOrigenBox1" class="boxType" placeholder="Mes">
+                    <input type="text" id="añoOrigenBox1" class="boxType" placeholder="Año">
+                </div>
+            </div>
+            <div class="tiempo separador">
+                <h3 class="parametrosInicio">Hora:</h3>
+                <div>
+                    <input type="text" id="horaBox1" class="boxType" placeholder="Hora">
+                    <input type="text" id="minBox1" class="boxType" placeholder="Min">
+                    <input type="text" id="amPmBox1" class="boxType" placeholder="am/pm">
+                </div>
+            </div>
+            <div class="direccionOrigen">
+                <label for="priceBox1" class="parametrosInicio">Valor:</label>
+                <input type="text" name="precioOrigen" id="priceBox1" class="boxTypeP"
+                    placeholder="Precio ida">
+            </div>
+            <div class="direccionOrigen">
+                <label for="dirOrigenBox1" class="parametrosInicio">Dirección Origen:</label>
+                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirOrigenBox1" autocomplete="off"></input>
+            </div>
+            <div class="direccionOrigen">
+                <label for="dirDestinoBox1" class="parametrosInicio">Dirección Destino:</label>
+                <input class="DirOrigen boxTypeO" placeholder="Fin viaje" id="dirDestinoBox1"></input>
+            </div>
+            <dir class="direccionOrigen">
+                <button class="boxTypeO" onclick="aceptaBox1()" id="aceptaBox1">Ingresar</button>
+            </dir>
+
+            <div class="direccionOrigen">
+                <label for="porcentajeBateria" class="parametrosInicio">Nivel de batería:</label>
+                <input type="number" min="0" max="100" placeholder="Nivel de batería" class="boxTypeO"
+                    id="porcentajeBateria">
+                <button class="boxTypeO" onclick="nivelBateria()">Ingresar</button>
+            </div>
+            <div class="parametrosIcon">
+                <label for="whatsapp" class="parametrosInicioIcon">¿WhatsApp?</label>
+                <input type="checkbox" class="boxTypeC" onchange="whatsapp()" id="whatsapp" checked>
+            </div>
+            <div class="parametrosIcon">
+                <label for="alarma" class="parametrosInicioIcon">¿Alarma?</label>
+                <input type="checkbox" class="boxTypeC" onchange="alarma()" id="alarma" checked>
+            </div>
+            <div class="parametrosIcon">
+                <label for="facebook" class="parametrosInicioIcon">¿Facebook?</label>
+                <input type="checkbox" class="boxTypeC" onchange="facebook()" id="facebook" checked>
             </div>
         </div>
     </div>
