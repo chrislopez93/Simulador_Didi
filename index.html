@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <di class="body">
+    <div class="body">
     <div class="statusContenedor">
         <div class="clockMailWhatsapp">
             <div id="statusHora" class="statusHorario textHora" onload="reloj()">
@@ -71,18 +71,19 @@
                             <img class="clock" src="./assets/img/clock.png" alt="Clock">
                         </figure>
                     </div>
+
                     <div class="contenedor_fechaFinalizado">
                         <div class="fechaFinalizado">
-                            <p id="dia" class="text textFecha">01</p>
+                            <p class="text textFecha"><span id="diaViajeBox1">??</span></p>
                             <p class="textBar">/</p>
-                            <p id="mes" class="text textFecha">01</p>
+                            <p class="text textFecha"><span id="mesViajeBox1">??</span></p>
                             <p class="textBar">/</p>
-                            <p id="año" class="text textFecha">01</p>
+                            <p class="text textFecha"><span id="añoViajeBox1">??</span></p>
                             <p class="text coma">,</p>
-                            <p id="hora" class="hora text">00</p>
+                            <p class="hora text"><span id="horaViajeBox1">??</span></p>
                             <p class="text doblePunto">:</p>
-                            <p id="minutos" class="minutos text">00</p>
-                            <p id="amPm" class="text ampm">am</p>
+                            <p class="minutos text"><span id="minutoViajeBox1">??</span></p>
+                            <p class="text ampm"><span id="amPmViajeBox1">??</span></p>
                         </div>
                         <div class="contenedor_finalizadoText">
                             <p class="textFinalizado">Finalizado</p>
@@ -110,7 +111,7 @@
         <div class="contenedor_viajes">
             <div class="contenedor_expressPrecio">
                 <p class="text expressPrice">Express</p>
-                <p id="price" class="text expressPrice">$9,999</p>
+                <p class="text expressPrice"><span id="priceBox1">$9,999</span></p>
             </div>
             <div class="contenedorViaje">
                 <div class="contenedor_fechaHora">
@@ -121,16 +122,16 @@
                     </div>
                     <div class="contenedor_fechaFinalizado">
                         <div class="fechaFinalizado">
-                            <p id="dia" class="text textFecha">01</p>
+                            <p class="text textFecha"></p>
                             <p class="textBar">/</p>
-                            <p id="mes" class="text textFecha">01</p>
+                            <p class="text textFecha">01</p>
                             <p class="textBar">/</p>
-                            <p id="año" class="text textFecha">01</p>
+                            <p class="text textFecha">01</p>
                             <p class="text coma">,</p>
-                            <p id="hora" class="hora text">00</p>
+                            <p class="hora text">00</p>
                             <p class="text doblePunto">:</p>
-                            <p id="minutos" class="minutos text">00</p>
-                            <p id="amPm" class="text ampm">am</p>
+                            <p class="minutos text">00</p>
+                            <p class="text ampm">am</p>
                         </div>
                         <div class="contenedor_finalizadoText">
                             <p class="textFinalizado">Finalizado</p>
@@ -155,95 +156,103 @@
                 </div>
             </div>
         </div>
-        <div class="contenedorDatos">
-            <div class="contenedorInputs">
-                <h2 class="tituloDatos">Caja 1:</h2>
-                <div class="tiempo">
-                    <h3 class="parametrosInicio">Origen:</h3>
-                    <div>
-                        <input type="text" id="diaBoxI" class="boxType" placeholder="Día">
-                        <input type="text" id="mesBoxI" class="boxType" placeholder="Mes">
-                        <input type="text" id="añoBoxI" class="boxType" placeholder="Año">
-                    </div>
-                </div>
-                <div class="tiempo separador">
-                    <h3 class="parametrosInicio">Destino:</h3>
-                    <div>
-                        <input type="day" class="diaBox boxType" placeholder="Día">
-                        <input type="text" class="mesBox boxType" placeholder="Mes">
-                        <input type="text" class="añoBox boxType" placeholder="Año">
-                    </div>
-                </div>
-                <div class="precioOrigen">
-                    <h3 class="parametrosInicio">Valor:</h3>
-                    <input type="number" name="precioOrigen" id="precioOrigen" class="boxTypeP"
-                        placeholder="Precio ida">
-                </div>
-                <div class="direccionOrigen">
-                    <h3 class="parametrosInicio">Dirección Origen:</h3>
-                    <input class="DirOrigen boxTypeO" placeholder="Inicio viaje"></input>
-                </div>
-                <div class="direccionOrigen">
-                    <h3 class="parametrosInicio">Nivel de batería:</h3>
-                    <input type="number" min="0" max="100" placeholder="Nivel de batería" class="boxTypeO"
-                        id="porcentajeBateria">
-                    <button class="boxTypeO" onclick="nivelBateria()">Ingresar</button>
-                </div>
-                <div class="parametrosIcon">
-                    <h3 class="parametrosInicioIcon">¿WhatsApp?</h3>
-                    <input type="checkbox" class="boxTypeC" onchange="whatsapp()" id="whatsapp" checked>
-                </div>
-                <div class="parametrosIcon">
-                    <h3 class="parametrosInicioIcon">¿Alarma?</h3>
-                    <input type="checkbox" class="boxTypeC" onchange="alarma()" id="alarma" checked>
+    </main>
+</div>
+    <div class="contenedorDatos">
+        <div class="contenedorInputs">
+            <h2 class="tituloDatos">Caja 1:</h2>
+            <div class="tiempo">
+                <h3 class="parametrosInicio">Origen:</h3>
+                <div>
+                    <input type="text" id="diaOrigenBox1" class="boxType" placeholder="Día">
+                    <input type="text" id="mesOrigenBox1" class="boxType" placeholder="Mes">
+                    <input type="text" id="añoOrigenBox1" class="boxType" placeholder="Año">
                 </div>
             </div>
+            <div class="tiempo separador">
+                <h3 class="parametrosInicio">Hora:</h3>
+                <div>
+                    <input type="text" id="horaBox1" class="boxType" placeholder="Hora">
+                    <input type="text" id="minBox1" class="boxType" placeholder="Min">
+                    <input type="text" id="amPmBox1" class="boxType" placeholder="am/pm">
+                </div>
+            </div>
+            <div class="direccionOrigen">
+                <label for="precioOrigen" class="parametrosInicio">Valor:</label>
+                <input type="number" name="precioOrigen" id="precioOrigen" class="boxTypeP"
+                    placeholder="Precio ida">
+            </div>
+            <div class="direccionOrigen">
+                <label for="dirOrigenBox1" class="parametrosInicio">Dirección Origen:</label>
+                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirOrigenBox1"></input>
+            </div>
+            <div class="direccionOrigen">
+                <label for="dirDestinoBox1" class="parametrosInicio">Dirección Destino:</label>
+                <input class="DirOrigen boxTypeO" placeholder="Inicio viaje" id="dirDestinoBox1"></input>
+            </div>
+            <dir class="direccionOrigen">
+                <button class="boxTypeO" onclick="aceptaBox1()" id="aceptaBox1">Ingresar</button>
+            </dir>
 
-            <div class="contenedorInputs">
-                <h2 class="tituloDatos">Caja 2</h2>
-                <div class="tiempo">
-                    <h3 class="parametrosInicio">Origen:</h3>
-                    <div>
-                        <input type="text" class="diaBox boxType" placeholder="Día">
-                        <input type="text" class="mesBox boxType" placeholder="Mes">
-                        <input type="text" class="añoBox boxType" placeholder="Año">
-                    </div>
+            <div class="direccionOrigen">
+                <label for="porcentajeBateria" class="parametrosInicio">Nivel de batería:</label>
+                <input type="number" min="0" max="100" placeholder="Nivel de batería" class="boxTypeO"
+                    id="porcentajeBateria">
+                <button class="boxTypeO" onclick="nivelBateria()">Ingresar</button>
+            </div>
+            <div class="parametrosIcon">
+                <label for="whatsapp" class="parametrosInicioIcon">¿WhatsApp?</label>
+                <input type="checkbox" class="boxTypeC" onchange="whatsapp()" id="whatsapp" checked>
+            </div>
+            <div class="parametrosIcon">
+                <label for="alarma" class="parametrosInicioIcon">¿Alarma?</label>
+                <input type="checkbox" class="boxTypeC" onchange="alarma()" id="alarma" checked>
+            </div>
+        </div>
+
+        <div class="contenedorInputs">
+            <h2 class="tituloDatos">Caja 2</h2>
+            <div class="tiempo">
+                <h3 class="parametrosInicio">Origen:</h3>
+                <div>
+                    <input type="text" class="diaBox boxType" placeholder="Día">
+                    <input type="text" class="mesBox boxType" placeholder="Mes">
+                    <input type="text" class="añoBox boxType" placeholder="Año">
                 </div>
-                <div class="tiempo separador">
-                    <h3 class="parametrosInicio">Destino:</h3>
-                    <div>
-                        <input type="text" class="diaBox boxType" placeholder="Día">
-                        <input type="text" class="mesBox boxType" placeholder="Mes">
-                        <input type="text" class="añoBox boxType" placeholder="Año">
-                    </div>
+            </div>
+            <div class="tiempo separador">
+                <h3 class="parametrosInicio">Destino:</h3>
+                <div>
+                    <input type="text" class="diaBox boxType" placeholder="Día">
+                    <input type="text" class="mesBox boxType" placeholder="Mes">
+                    <input type="text" class="añoBox boxType" placeholder="Año">
                 </div>
-                <div class="precioOrigen">
-                    <h3 class="parametrosInicio">Valor:</h3>
-                    <input type="text" name="precioOrigen" id="precioOrigen" class="boxTypeP"
-                        placeholder="Precio regreso">
+            </div>
+            <div class="precioOrigen">
+                <h3 class="parametrosInicio">Valor:</h3>
+                <input type="text" name="precioOrigen" id="precioOrigen" class="boxTypeP"
+                    placeholder="Precio regreso">
+            </div>
+            <div class="direccionOrigen">
+                <h3 class="parametrosInicio">Dirección destino:</h3>
+                <input class="DirOrigen boxTypeD" placeholder="Término viaje"></input>
+            </div>
+            <div class="direccionOrigen">
+                <label for="porcentajeCelular" class="parametrosInicio">Nivel de señal:</label>
+                <input type="number" min="0" max="100" placeholder="Nivel de señal" class="boxTypeO"
+                    id="porcentajeCelular">
+                <button class="boxTypeO" onclick="nivelCelular()">Ingresar</button>
+                <div class="parametrosIcon">
+                    <label for="gmail" class="parametrosInicioIcon">¿Gmail?</label>
+                    <input type="checkbox" class="boxTypeC" onchange="gmail()" id="gmail" checked>
                 </div>
-                <div class="direccionOrigen">
-                    <h3 class="parametrosInicio">Dirección destino:</h3>
-                    <input class="DirOrigen boxTypeD" placeholder="Término viaje"></input>
-                </div>
-                <div class="direccionOrigen">
-                    <h3 class="parametrosInicio">Nivel de señal:</h3>
-                    <input type="number" min="0" max="100" placeholder="Nivel de señal" class="boxTypeO"
-                        id="porcentajeCelular">
-                    <button class="boxTypeO" onclick="nivelCelular()">Ingresar</button>
-                    <div class="parametrosIcon">
-                        <h3 class="parametrosInicioIcon">¿Gmail?</h3>
-                        <input type="checkbox" class="boxTypeC" onchange="gmail()" id="gmail" checked>
-                    </div>
-                    <div class="parametrosIcon">
-                        <h3 class="parametrosInicioIcon">¿Didi?</h3>
-                        <input type="checkbox" class="boxTypeC" onchange="didi()" id="didi" checked>
-                    </div>
+                <div class="parametrosIcon">
+                    <label for="didi" class="parametrosInicioIcon">¿Didi?</label>
+                    <input type="checkbox" class="boxTypeC" onchange="didi()" id="didi" checked>
                 </div>
             </div>
         </div>
-    </main>
-</div>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 

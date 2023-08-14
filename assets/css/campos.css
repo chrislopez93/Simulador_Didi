@@ -22,9 +22,7 @@
 .contenedorDatos{
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding-bottom: 40px;
-  margin-top: 40px;
   background-color: #d0dcc6;
 }
 

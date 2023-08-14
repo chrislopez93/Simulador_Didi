@@ -5,18 +5,20 @@ padding: 0
 
 body{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Choco Cooky';
+    src: url('../fonts/Chococooky.ttf') format('Normal');
     background-color: #F3F4F6;
+    padding-top: 50px;
 }
 
 .body{
-    font-family: 'Choco Cooky';
-    src: url('../fonts/Chococooky.ttf') format('Normal');
     background-color: #F3F4F6;
     max-width: 1080px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     
 }

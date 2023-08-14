@@ -1,3 +1,36 @@
+function aceptaBox1(){
+let varaceptaBox1 = document.getElementById('aceptaBox1');
+let diaViajeBox1 = document.getElementById('diaViajeBox1');
+let mesViajeBox1 = document.getElementById('mesViajeBox1');
+let añoViajeBox1 = document.getElementById('añoViajeBox1');
+let horaViajeBox1 = document.getElementById('horaViajeBox1');
+let minutoViajeBox1 = document.getElementById('minutoViajeBox1');
+let amPmViajeBox1 = document.getElementById('amPmViajeBox1');
+
+let diaOrigenBox1 = document.getElementById('diaOrigenBox1').value;
+let mesOrigenBox1 = document.getElementById('mesOrigenBox1').value;
+let añoOrigenBox1 = document.getElementById('añoOrigenBox1').value;
+let horaBox1 = document.getElementById('horaBox1').value;
+let minBox1 = document.getElementById('minBox1').value;
+let amPmBox1 = document.getElementById('amPmBox1').value;
+if(diaOrigenBox1 !== "" && mesOrigenBox1 !== "" && añoOrigenBox1 !== "" && horaBox1 !== "" && minBox1 !== "" && amPmBox1 !== ""){
+  alert('OK');
+  diaViajeBox1.textContent = diaOrigenBox1;
+  mesViajeBox1.textContent = mesOrigenBox1;
+  añoViajeBox1.textContent = añoOrigenBox1;
+  horaViajeBox1.textContent = horaBox1;
+  minutoViajeBox1.textContent = minBox1;
+  amPmViajeBox1.textContent = amPmBox1;
+}else{
+  alert('¡Faltan campos!');
+}
+
+
+
+
+}
+
+
 function cargarReloj() {
   // Haciendo uso del objeto Date() obtenemos la hora, minuto y segundo
   var fechahora = new Date();
@@ -112,3 +145,4 @@ function didi(){
         didiPic.style.display = "none"
     }
 }
+
